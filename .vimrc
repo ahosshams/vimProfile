@@ -67,6 +67,5 @@ if has("autocmd")
 au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!
 endif 
 
-hello my name is amirhosein
 
 
