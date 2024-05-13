@@ -55,7 +55,7 @@ call plug#end()
 
 colorscheme gruvbox
 set background=dark
-
+"thick cursor"
 if has("autocmd")
   au VimEnter,InsertLeave * silent execute '!echo -ne "\e[2 q"' | redraw!
   au InsertEnter,InsertChange *
@@ -66,13 +66,14 @@ if has("autocmd")
 \ endif
 au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!
 endif 
-
+"nerdtree shortcuts"
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 if has("gui_running")
+  set lines=999 columns=999 "open fullscreen"
   if has("gui_gtk3")
     set guifont=Inconsolata\ 14
   elseif has("gui_macvim")
@@ -81,3 +82,8 @@ if has("gui_running")
     set guifont=Consolas:h11:cANSI
   endif
 endif
+
+"set environment"
+botright term++rows=6
+let g:NERDTreeWinSize=20
+autocmd VimEnter * NERDTree
