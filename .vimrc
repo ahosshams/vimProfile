@@ -67,8 +67,17 @@ if has("autocmd")
 au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!
 endif 
 
-
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
+if has("gui_running")
+  if has("gui_gtk3")
+    set guifont=Inconsolata\ 14
+  elseif has("gui_macvim")
+    set guifont=Menlo\ Regular:h14
+  elseif has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
+endif
