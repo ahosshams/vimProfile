@@ -82,8 +82,3 @@ if has("gui_running")
     set guifont=Consolas:h11:cANSI
   endif
 endif
-
-"set environment"
-botright term++rows=6
-let g:NERDTreeWinSize=20
-autocmd VimEnter * NERDTree
