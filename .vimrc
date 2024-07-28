@@ -50,7 +50,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
 Plug 'morhetz/gruvbox'
-
+Plug 'cpiger/NeoDebug'
 call plug#end()
 
 colorscheme gruvbox
