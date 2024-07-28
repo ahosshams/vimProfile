@@ -11,8 +11,6 @@ set nocompatible
 set modifiable
 set autoread
 set cmdheight=1 
-set foldenable
-set foldmethod=indent
 set path+=**
 set noswapfile
 set autoindent
