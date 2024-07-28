@@ -82,3 +82,5 @@ if has("gui_running")
     set guifont=Consolas:h11:cANSI
   endif
 endif
+"terminal shortcuts"
+nnoremap <Leader>t :botright term<CR>
