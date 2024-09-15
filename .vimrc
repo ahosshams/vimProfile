@@ -50,6 +50,7 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'cpiger/NeoDebug'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'bling/vim-bufferline'
 call plug#end()
 
 colorscheme jellybeans
