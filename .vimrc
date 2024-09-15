@@ -47,11 +47,11 @@ Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
-Plug 'morhetz/gruvbox'
+Plug 'nanotech/jellybeans.vim'
 Plug 'cpiger/NeoDebug'
 call plug#end()
 
-colorscheme gruvbox
+colorscheme jellybeans
 set background=dark
 "thick cursor"
 if has("autocmd")
