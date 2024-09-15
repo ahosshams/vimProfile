@@ -84,6 +84,7 @@ if has("gui_running")
 endif
 "terminal shortcuts"
 nnoremap <Leader>t :botright term ++rows=6<CR>
+nnoremap <Leader>f :Files<CR>
 "NeoDebug shortcuts"
 let g:neodbg_keymap_toggle_breakpoint  = '<F9>'         " toggle breakpoint on current line
 let g:neodbg_keymap_next               = '<F10>'        " next
