@@ -51,6 +51,7 @@ Plug 'cpiger/NeoDebug'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'bling/vim-bufferline'
+Plug 'voldikss/vim-floaterm'
 call plug#end()
 
 colorscheme jellybeans
@@ -83,7 +84,8 @@ if has("gui_running")
   endif
 endif
 "terminal shortcuts"
-nnoremap <Leader>t :botright term ++rows=6<CR>
+nnoremap <Leader>t :FloatermNew --wintype=vsplit --position=right --width=0.4 <CR>
+nnoremap <Leader>y :FloatermNew --wintype=split --position=bottom --height=0.2 <CR>
 "fzf shortcuts"
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>b :Buffers<CR> 
