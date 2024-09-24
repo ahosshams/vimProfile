@@ -52,9 +52,10 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'bling/vim-bufferline'
 Plug 'voldikss/vim-floaterm'
+Plug 'cocopon/iceberg.vim'
 call plug#end()
 
-colorscheme jellybeans
+colorscheme iceberg
 set background=dark
 "thick cursor"
 if has("autocmd")
