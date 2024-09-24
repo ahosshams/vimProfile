@@ -34,7 +34,7 @@ set autowriteall
 set laststatus=2
 set noshowmode
 set mouse=a
-
+set clipboard=unnamedplus,unnamed
 
 
 call plug#begin()
