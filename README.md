@@ -2,7 +2,7 @@
 
 This repository contains my personal Vim configuration, focused on improving editing comfort, file navigation, search, and debugging.  
 
-## ✨ Features  
+##  Features  
 - **Better Editing Experience**  
   - Line numbers (`set number`)  
   - Search highlighting (`set hlsearch`, `set incsearch`)  
@@ -29,18 +29,12 @@ This repository contains my personal Vim configuration, focused on improving edi
 
 ---
 
-## 📦 Requirements  
-- **Vim 8+** (preferably with `+python` and `+clipboard` support)  
-- **git** for plugin installation  
-- **fzf** (if you want fuzzy file search)  
+##  Requirements  
+- **git** 
+- **curl** 
 
 ---
 
-## 🔧 Installation  
+##  Installation  
 
-1. Copy this configuration into your `~/.vimrc`.  
-2. Make sure [vim-plug](https://github.com/junegunn/vim-plug) is installed.  
-3. Open Vim and run:  
-
-   ```vim
-   :PlugInstall
+Run ./install.sh or copy the configuration into your `~/.vimrc`.  
