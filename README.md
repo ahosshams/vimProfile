@@ -2,6 +2,7 @@
 
 This repository contains my personal Vim configuration, focused on improving editing comfort, file navigation, search, and debugging.  
 
+
 ##  Features  
 - **Better Editing Experience**  
   - Line numbers (`set number`)  
